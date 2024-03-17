@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Oracle One - Desafio</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <img src="./assets/alura.png" alt="Logo Alura" />
+    </header>
+
+    <main class="apresentacao">
+      <section class="conteudo">
+        <h1 class="titulo">Codificador e Decodificador de mensagens</h1>
+
+        <h2>
+          <textarea
+            id="textarea1"
+            class="input"
+            rows="6"
+            cols="35"
+            name="text"
+            placeholder="Digite seu texto"
+            maxlength="156"
+            maxrow="6"
+            onfocus="tela_inicial()"
+          ></textarea>
+
+          <p id="error_message"></p>
+
+          <div class="texto">
+            <img
+              src="./assets/bi_exclamation-circle-fill.png"
+              alt="Exclamação"
+              class="exclam"
+            />
+            Apenas letras minúsculas e sem acento
+          </div>
+
+          <p id="msg_cript" class="msg_cript"></p>
+
+          <div class="botoes">
+            <button onclick="criptografar()" class="botao1">
+              Criptografar
+            </button>
+            <button onclick="descriptografar()" class="botao2">
+              Descriptografar
+            </button>
+            <button
+              onclick="copiar()"
+              id="copiar"
+              class="botao3"
+              style="display: none"
+            >
+              Copiar
+            </button>
+          </div>
+        </h2>
+
+        <h3 class="msg_erro"></h3>
+
+        <div id="retangulo" class="retangulo">
+          <img
+            src="./assets/Img001.png"
+            alt="Nenhuma mensagem encontrada"
+            class="img"
+            id="img"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="rodape">
+        <p>Desenvolvido por JotaEsse</p>
+      </div>
+    </footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>

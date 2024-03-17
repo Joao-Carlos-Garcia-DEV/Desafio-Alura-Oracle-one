@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+    --cor-primaria: #f1fada;
+    --cor-secundaria: #2d9596;
+    --cor-terciaria: #f1faea;
+
+    --cor-des: #265073;
+    --cor_preto: #000000;
+    --cor_botao1: #0a3871;
+    --cor_botao2: #d8dfe8;
+    --cor-erro: #ff0000;
+
+    --fonte-Dancing: 'Dancing script', cursive;
+    --fonte-inter: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fonte-primaria);
+}
+
+h1 {
+    color: var(--cor-secundaria);
+    font-weight: lighter;
+}
+
+.cabecalho {
+    padding: 1% 0% 0% 0%;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    gap: 40px;
+}
+
+.apresentacao {
+    padding: 0% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo {
+    padding: 0% 0%;
+    font-size: 2.5rem;
+    font-family: var(--fonte-Dancing);
+    color: var(--cor-des);
+    font-weight: bold;
+}
+
+.conteudo {
+    padding: 0% 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    left: 210px;
+    top: 700px;
+    font-family: var(--fonte-inter);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.exclam {
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.input {
+    width: 680px;
+    height: 288px;
+    /* border-radius: 16px; */
+    background-color: var(--cor-primaria);
+    color: var(--cor_botao1);
+    padding: 1rem;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: var(--fonte-inter);
+    top: 168px;
+    left: 240px;
+    /* line-height: 48px; */
+    letter-spacing: 0em;
+    text-align: left;
+    border-style: none;
+
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.botoes {
+    display: flex;
+    gap: 2em;
+}
+
+.botao1 {
+    position: absolute;
+    left: 200px;
+    top: 750px;
+    font-family: var(--fonte-inter);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--cor_botao2);
+    background-color: var(--cor_botao1);
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    cursor: pointer;
+}
+
+.botao2 {
+    position: absolute;
+    left: 600px;
+    top: 750px;
+    font-family: var(--fonte-inter);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--cor_botao1);
+    background-color: var(--cor_botao2);
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    cursor: pointer;
+}
+
+.botao3 {
+    position: absolute;
+    left: 1290px;
+    top: 750px;
+    font-family: var(--fonte-inter);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--cor_botao1);
+    background-color: var(--cor_botao2);
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.retangulo {
+    position: absolute;
+    left: 1200px;
+    top: 30px;
+    width: 480px;
+    height: 800px;
+    box-shadow: 0px 24px 32px -8px var(--cor-secundaria);
+    border-style: solid;
+    border-radius: 32px;
+    border-color: var(--cor-secundaria);
+    z-index: 0;
+}
+
+.img {
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    width: 300px;
+    height: 320px;
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    padding: 8px;
+    text-align: center;
+    font-family: var(--fonte-Dancing);
+    font-size: 1.5rem;
+    font-weight: 400;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.imag {
+    width: 40%;
+    display: flex;
+}
+
+.msg_erro {
+    color: var(--cor-erro);
+    font-size: 24px;
+}
+
+.msg_cript {
+    position: absolute;
+
+    width: 336px;
+    height: 781px;
+    top: 72px;
+    left: 1280px;
+
+    font-family: var(--fonte-inter);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    overflow-wrap: break-word;
+
+
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .conteudo {
+        width: auto;
+    }
+}
